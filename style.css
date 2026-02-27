@@ -21,8 +21,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 1rem;
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.25s ease, color 0.25s ease;
@@ -30,6 +31,8 @@ body {
 
 #app {
     text-align: center;
+    width: 100%;
+    max-width: 520px;
     background-color: var(--surface-color);
     padding: 2rem;
     border-radius: 10px;
@@ -90,4 +93,41 @@ button:hover {
 
 #theme-toggle {
     margin-bottom: 1rem;
+}
+
+#partnership {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#partnership h2 {
+    margin: 0 0 0.75rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+#partnership form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#partnership label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#partnership input,
+#partnership textarea {
+    padding: 0.65rem 0.7rem;
+    border: 1px solid rgba(127, 127, 127, 0.35);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: var(--text-color);
+    background-color: var(--surface-color);
+}
+
+#partnership textarea {
+    resize: vertical;
 }
